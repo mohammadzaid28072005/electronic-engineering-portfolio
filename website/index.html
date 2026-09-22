@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Electronic Engineering portfolio of Mohammad Zaid Aziz — embedded systems, PCB design, FPGA, DSP, communications and control.">
+  <meta name="theme-color" content="#07111f">
+  <title>Mohammad Zaid Aziz — Electronic Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307111f'/%3E%3Cpath d='M15 18h34v8H34v8h15v8H34v12h-8V42H15v-8h11v-8H15z' fill='%235eead4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Zaid Aziz, home">
+      <span class="brand-mark">ZA</span>
+      <span>Electronic Engineering</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="signal-dot"></span> Graduate engineer · London</p>
+        <h1>Mohammad<br><span>Zaid Aziz</span></h1>
+        <p class="lede">Electronic engineer working across the full signal chain—from sensors and PCB hardware to embedded software, FPGA logic and signal processing.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+          <a class="button secondary" href="#skills">Technical profile</a>
+        </div>
+      </div>
+      <div class="scope-panel" aria-label="Engineering scope">
+        <div class="scope-head"><span>SYSTEM / OVERVIEW</span><span class="status">READY</span></div>
+        <div class="signal-chain" aria-label="Sensor to insight engineering workflow">
+          <div class="node"><span>01</span><strong>Sense</strong><small>LM35 · ECG · ADXL362</small></div>
+          <div class="connector" aria-hidden="true"></div>
+          <div class="node"><span>02</span><strong>Process</strong><small>ESP32 · FPGA · MATLAB</small></div>
+          <div class="connector" aria-hidden="true"></div>
+          <div class="node"><span>03</span><strong>Connect</strong><small>HTTP · MQTT · Socket.IO</small></div>
+        </div>
+        <div class="scope-stats">
+          <div><strong>69.5%</strong><span>Degree average</span></div>
+          <div><strong>2:1</strong><span>BEng Honours</span></div>
+          <div><strong>86%</strong><span>Digital systems</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Core disciplines">
+      <div>EMBEDDED SYSTEMS <i>◆</i> PCB DESIGN <i>◆</i> FPGA / VHDL <i>◆</i> SIGNAL PROCESSING <i>◆</i> COMMUNICATIONS <i>◆</i> CONTROL</div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading">
+        <div>
+          <p class="section-index">01 / SELECTED WORK</p>
+          <h2>Projects built from<br>the circuit up.</h2>
+        </div>
+        <p>A selection of practical university work spanning hardware design, real-time systems, digital logic and engineering analysis.</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="filter active" data-filter="all" aria-pressed="true">All work</button>
+        <button class="filter" data-filter="hardware" aria-pressed="false">Hardware</button>
+        <button class="filter" data-filter="digital" aria-pressed="false">Digital & software</button>
+        <button class="filter" data-filter="analysis" aria-pressed="false">Analysis</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured" data-category="hardware digital">
+          <div class="card-top"><span class="project-no">P / 01</span><span class="tag">Final-year project</span></div>
+          <figure class="project-evidence wide">
+            <img src="assets/fleet-dashboard.png" alt="Temperature Fleet Monitor dashboard showing fleet statistics, device search and event monitoring" loading="lazy">
+            <figcaption>Final dashboard · live overview, device state and event monitoring</figcaption>
+          </figure>
+          <h3>Temperature fleet-management platform</h3>
+          <p>Designed and built a low-cost IoT platform for monitoring and managing multiple wireless temperature-sensing nodes through a browser dashboard.</p>
+          <ul class="outcomes">
+            <li>ESP32-S3 and LM35 nodes with device identity, temperature, RSSI and online/offline telemetry</li>
+            <li>HTTP-to-MQTT bridge created after direct MQTT port 1883 timed out on eduroam</li>
+            <li>Node.js/Express backend with SQLite history, events, Socket.IO updates and remote configuration</li>
+            <li>Battery-powered stripboard prototype housed in a designed, printed and test-fitted enclosure</li>
+          </ul>
+          <div class="tech-row"><span>ESP32-S3</span><span>Node.js</span><span>SQLite</span><span>HTTP / MQTT</span><span>Socket.IO</span><span>KiCad</span></div>
+        </article>
+
+        <article class="project-card" data-category="digital hardware">
+          <div class="card-top"><span class="project-no">P / 02</span><span class="tag">86% module</span></div>
+          <div class="mini-diagram fpga" aria-hidden="true"><span>ADXL362</span><b>→ SPI →</b><span>FPGA</span><b>→</b><span>7-SEG</span></div>
+          <h3>FPGA digital systems suite</h3>
+          <p>Implemented and verified reusable VHDL designs on a Digilent Nexys A7-100T, progressing from combinational logic to integrated peripherals.</p>
+          <ul class="outcomes">
+            <li>Built adders, counters, registers, multiplexers, binary-to-BCD conversion and a four-tap FIR filter</li>
+            <li>Integrated an ADXL362 over 1 MHz SPI with 32-reading averaging and switch-selected X/Y/Z axes</li>
+            <li>Drove an eight-digit display and RGB orientation indicator; resolved active-low segment and constraint issues</li>
+          </ul>
+          <div class="tech-row"><span>VHDL</span><span>Vivado</span><span>Nexys A7</span><span>SPI</span></div>
+        </article>
+
+        <article class="project-card" data-category="analysis digital">
+          <div class="card-top"><span class="project-no">P / 03</span><span class="tag">Biomedical DSP</span></div>
+          <figure class="project-evidence">
+            <img src="assets/ecg-qrs-analysis.png" alt="MATLAB plot showing detected Q, R and S waves in a 60-second ECG recording" loading="lazy">
+            <figcaption>MATLAB output · Pan-Tompkins QRS detection</figcaption>
+          </figure>
+          <h3>ECG signal analysis pipeline</h3>
+          <p>Developed a MATLAB workflow as part of group coursework to compare resting and exercising ECG recordings and recover meaningful heart-rate information from noisy signals.</p>
+          <ul class="outcomes">
+            <li>Processed 60-second OpenBCI Ganglion recordings sampled at 200 Hz</li>
+            <li>Removed baseline wander, filtered noise and detected Q, R and S features</li>
+            <li>Compared relaxed and post-exercise recordings: approximately 72 BPM versus 102 BPM by manual count</li>
+          </ul>
+          <div class="tech-row"><span>MATLAB</span><span>Butterworth</span><span>QRS detection</span><span>ECG</span></div>
+        </article>
+
+        <article class="project-card" data-category="analysis digital">
+          <div class="card-top"><span class="project-no">P / 04</span><span class="tag">Signal processing</span></div>
+          <div class="mini-diagram spectrum" aria-hidden="true"><i style="height:22%"></i><i style="height:48%"></i><i style="height:86%"></i><i style="height:42%"></i><i style="height:68%"></i><i style="height:31%"></i><i style="height:58%"></i><i style="height:18%"></i></div>
+          <h3>Digital filter design & audio analysis</h3>
+          <p>Designed and evaluated IIR and FIR filters for sampled signals, connecting frequency-domain theory to practical audio processing.</p>
+          <ul class="outcomes">
+            <li>Impulse-invariant low-pass, band-stop and band-pass IIR filters</li>
+            <li>Frequency-sampling FIR design with Hamming and Hann windows</li>
+            <li>512-point FFT analysis of audio and sinusoid identification</li>
+          </ul>
+          <div class="tech-row"><span>MATLAB</span><span>FFT</span><span>IIR / FIR</span><span>Audio DSP</span></div>
+        </article>
+
+        <article class="project-card" data-category="analysis">
+          <div class="card-top"><span class="project-no">P / 05</span><span class="tag">RF communications</span></div>
+          <figure class="project-evidence">
+            <img src="assets/rf-sinr-map.png" alt="MATLAB Site Viewer SINR coverage map between the Shilling Building and three campus receiver locations" loading="lazy">
+            <figcaption>868 MHz campus link · modelled SINR coverage</figcaption>
+          </figure>
+          <h3>LoRa propagation & coverage study</h3>
+          <p>Modelled an 868 MHz radio link and its real-world coverage, using propagation fundamentals to assess receiver performance.</p>
+          <ul class="outcomes">
+            <li>Transmitter and receiver modelling between Shilling, Founder's and campus locations</li>
+            <li>Free-space path loss, Fresnel-zone and sensitivity analysis</li>
+            <li>Coverage and SINR visualisation against −130 dBm sensitivity</li>
+          </ul>
+          <div class="tech-row"><span>MATLAB</span><span>LoRa 868 MHz</span><span>RF planning</span><span>SINR</span></div>
+        </article>
+
+        <article class="project-card" data-category="digital">
+          <div class="card-top"><span class="project-no">P / 06</span><span class="tag">Connected systems</span></div>
+          <div class="mini-diagram network" aria-hidden="true"><span>MCU</span><b>↔</b><span>API</span><b>↔</b><span>WEB</span></div>
+          <h3>IoT monitoring web application</h3>
+          <p>Created an end-to-end prototype linking physical hardware to a browser interface for live device data.</p>
+          <ul class="outcomes">
+            <li>Arduino Uno serial telemetry at 57,600 baud</li>
+            <li>Node.js REST endpoints and WebSocket live updates</li>
+            <li>Interactive p5.js/WebSerial front end</li>
+          </ul>
+          <div class="tech-row"><span>Arduino</span><span>Node.js</span><span>WebSocket</span><span>REST</span></div>
+        </article>
+
+        <article class="project-card" data-category="analysis digital">
+          <div class="card-top"><span class="project-no">P / 07</span><span class="tag">Communications</span></div>
+          <div class="mini-diagram qam" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <h3>Communication-system simulation</h3>
+          <p>Built Simulink models to explore modulation, noise and receiver performance under changing channel conditions.</p>
+          <ul class="outcomes">
+            <li>1 MHz carrier / 1 kHz message AM model</li>
+            <li>16-QAM transmission through an AWGN channel</li>
+            <li>BER and constellation behaviour at 20, 10 and −10 dB SNR</li>
+          </ul>
+          <div class="tech-row"><span>Simulink</span><span>16-QAM</span><span>AWGN</span><span>BER</span></div>
+        </article>
+
+        <article class="project-card" data-category="analysis hardware">
+          <div class="card-top"><span class="project-no">P / 08</span><span class="tag">Power systems</span></div>
+          <div class="mini-diagram ups" aria-hidden="true"><span>400 V AC</span><b>→</b><span>DC LINK</span><b>→</b><span>SPWM</span><b>→</b><span>LOAD</span></div>
+          <h3>100 kW online UPS conceptual design</h3>
+          <p>Developed and simulated a transformerless double-conversion UPS architecture for a data-centre application.</p>
+          <ul class="outcomes">
+            <li>Modelled a 400 V three-phase rectifier, 480 V battery-supported DC link and SPWM inverter in Simulink</li>
+            <li>Derived first-pass sizing values: 144 A input, 208 A DC-link current and 34.7 Ah minimum battery capacity</li>
+            <li>Evaluated redundancy, bypass, reliability, environmental impact and practical commercial sizing</li>
+          </ul>
+          <div class="tech-row"><span>Simulink</span><span>Rectifier</span><span>DC link</span><span>SPWM inverter</span><span>Battery sizing</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-heading compact">
+        <div><p class="section-index">02 / CAPABILITIES</p><h2>Engineering toolkit.</h2></div>
+        <p>Tools used to move from an engineering question to a tested implementation.</p>
+      </div>
+      <div class="skill-matrix">
+        <div class="skill-group"><span class="skill-id">A</span><h3>Hardware</h3><p>PCB schematic & layout · Analogue circuits · Sensor interfacing · Power regulation · Bench tools · Component selection</p></div>
+        <div class="skill-group"><span class="skill-id">B</span><h3>Embedded & digital</h3><p>ESP32 · Arduino · VHDL · FPGA architecture · SPI · ADC · Testbenches · Timing and constraints</p></div>
+        <div class="skill-group"><span class="skill-id">C</span><h3>Software</h3><p>MATLAB · Simulink · Node.js · JavaScript · REST APIs · WebSocket · Git · Data visualisation</p></div>
+        <div class="skill-group"><span class="skill-id">D</span><h3>Analysis</h3><p>DSP · FFT · Filter design · RF propagation · Communications · Control systems · Verification · Technical reporting</p></div>
+      </div>
+      <div class="tools-line"><span>PRIMARY TOOLS</span><div>KiCad 9</div><div>AMD Vivado</div><div>MATLAB / Simulink</div><div>Git / GitHub</div><div>Arduino IDE</div></div>
+    </section>
+
+    <section class="section education-section" id="education">
+      <div class="education-card">
+        <div class="degree-main">
+          <p class="section-index">03 / EDUCATION</p>
+          <span class="year">2023—2026</span>
+          <h2>BEng Electronic<br>Engineering</h2>
+          <p class="institution">Royal Holloway, University of London</p>
+          <div class="award"><strong>Upper Second-Class Honours</strong><span>Final average · 69.5%</span></div>
+        </div>
+        <div class="module-list">
+          <div class="module-head"><span>Complete honours-stage record</span><span>MARK</span></div>
+          <div class="year-row"><span>Final year · 67% weighting</span><strong>Y3</strong></div>
+          <div><span>Individual Project</span><strong>66</strong></div>
+          <div><span>Digital Signal Processing Design</span><strong>71</strong></div>
+          <div><span>Engineering Management</span><strong>61</strong></div>
+          <div><span>Biomedical Engineering</span><strong>64</strong></div>
+          <div><span>Digital Systems Design</span><strong>86</strong></div>
+          <div><span>Advanced Communication Systems</span><strong>65</strong></div>
+          <div><span>Power Systems</span><strong>72</strong></div>
+          <div class="year-row"><span>Second year · 33% weighting</span><strong>Y2</strong></div>
+          <div><span>Embedded Systems Team Project 2</span><strong>67</strong></div>
+          <div><span>Software Engineering for Electronics</span><strong>71</strong></div>
+          <div><span>Signals, Systems & Communications</span><strong>75</strong></div>
+          <div><span>Control</span><strong>68</strong></div>
+          <div><span>Electronic Materials & Devices</span><strong>65</strong></div>
+          <div><span>Analogue Electronic Systems</span><strong>85</strong></div>
+          <div><span>Professional & Sustainable Engineering</span><strong>69</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <p class="eyebrow">GRADUATE ELECTRONIC ENGINEER</p>
+      <h2>Hardware-minded.<br><span>Systems-focused.</span></h2>
+      <p>Based in London and interested in graduate electronic, embedded, hardware and electrical engineering opportunities.</p>
+      <a class="button primary" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Mohammad Zaid Aziz</span><span>Designed around evidence, built for engineering.</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
