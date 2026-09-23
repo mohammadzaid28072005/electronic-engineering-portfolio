@@ -69,6 +69,21 @@ A transformerless double-conversion UPS architecture modelled for a data-centre 
 - 512-point audio FFT analysis
 - Practical notch and band-pass filtering
 
+## Personal hardware projects
+
+### PC building, upgrades and optimisation
+
+Hands-on work across two desktop PCs, including my own build and a rebuild into a friend's case.
+
+- **Red build — AMD Ryzen 7 9800X3D + Radeon RX 7900 XTX:** built and regularly upgraded my personal desktop, replaced its air cooler with an all-in-one (AIO) liquid cooler, added storage, and carried out ongoing system optimisation.
+- **Green rebuild — NVIDIA GeForce RTX 3050 + Intel Core i5:** transferred the existing components into my friend's case, reassembled the system and optimised it.
+
+<img src="website/assets/pc-red-aio.jpg" alt="Red desktop build showing the Radeon graphics card and AIO cooler" width="620">
+
+<img src="website/assets/pc-red-front.jpg" alt="Front of the red desktop build" width="300"> <img src="website/assets/pc-green-rebuild.jpg" alt="Green case containing the rebuilt RTX 3050 and Intel Core i5 system" width="300">
+
+[Read the PC build case study](electronic-engineering-portfolio/08-pc-building-optimisation/).
+
 ## Project files
 
 Browse the [project folders](electronic-engineering-portfolio/) for the existing code, models and supporting material.
