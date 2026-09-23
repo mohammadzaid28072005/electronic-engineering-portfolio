@@ -6,18 +6,19 @@ This repository contains the source for my engineering portfolio. It brings toge
 
 ## Featured work
 
-### Temperature fleet-management platform
+### IoT Device Fleet Management & Temperature Monitoring
 
-My final-year project combined embedded hardware, communications and full-stack software into a multi-node monitoring platform.
+Developed an integrated hardware and software prototype for centrally monitoring and configuring a fleet of wireless temperature-sensing devices. This final-year project connected embedded sensor nodes to a browser dashboard, combining live telemetry, historical records and device-management functions.
 
-- ESP32-S3 nodes with LM35 analogue temperature sensing
-- Device identity, temperature, RSSI and connection-health telemetry
-- HTTP-to-MQTT bridge designed after direct MQTT port 1883 timed out on eduroam
-- Node.js/Express backend with SQLite persistence and Socket.IO live updates
-- Historical data, persistent event logs and remote device configuration
-- Battery-powered stripboard prototype and a designed, printed and test-fitted enclosure
+- **Embedded sensing:** ESP32-S3 nodes with LM35 temperature sensors, device identification, signal-strength reporting and connection-status telemetry
+- **Backend and data storage:** Node.js/Express services with SQLite persistence for measurement history, event logs and device configuration
+- **Live monitoring:** Socket.IO dashboard updates for fleet overview, individual device status and operational events
+- **Network integration:** HTTP-to-MQTT bridge implemented in response to direct MQTT connectivity restrictions encountered on eduroam
+- **Hardware integration:** Battery-powered stripboard prototype with a designed, 3D-printed and test-fitted enclosure
 
 ![Temperature Fleet Monitor dashboard](website/assets/fleet-dashboard.png)
+
+[View the project overview and architecture](electronic-engineering-portfolio/01-iot-temperature-monitoring-platform/).
 
 ### FPGA digital systems
 
