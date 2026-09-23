@@ -76,7 +76,8 @@ A transformerless double-conversion UPS architecture modelled for a data-centre 
 Hands-on work across two desktop PCs, including my own build and a rebuild into a friend's case.
 
 - **Red build — AMD Ryzen 7 9800X3D + Radeon RX 7900 XTX:** built and regularly upgraded my personal desktop, replaced its air cooler with an all-in-one (AIO) liquid cooler, added storage, and carried out ongoing system optimisation.
-- **Green rebuild — NVIDIA GeForce RTX 3050 + Intel Core i5:** transferred the existing components into my friend's case, reassembled the system and optimised it.
+  - Specifications: 32 GB DDR5 RAM, 3.5 TB total storage, ASUS B650 motherboard and 4 fans.
+- **Green rebuild — NVIDIA GeForce RTX 3050 + Intel Core i5:** transferred the existing components into my friend's case, reassembled the system and optimised it. Specifications: 16 GB DDR4 RAM and 500 GB storage.
 
 <img src="website/assets/pc-red-aio.jpg" alt="Red desktop build showing the Radeon graphics card and AIO cooler" width="620">
 

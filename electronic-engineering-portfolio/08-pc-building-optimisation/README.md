@@ -9,7 +9,10 @@ Personal hardware projects involving two desktop systems: my own PC and a rebuil
 | Processor | AMD Ryzen 7 9800X3D |
 | Graphics | AMD Radeon RX 7900 XTX |
 | Cooling upgrade | Air cooler replaced with an all-in-one (AIO) liquid cooler |
-| Storage | Expanded through additional storage upgrades |
+| Memory | 32 GB DDR5 |
+| Storage | 3.5 TB total, expanded through additional storage upgrades |
+| Motherboard | ASUS B650 |
+| Fans | 4 |
 
 I built this desktop and continue to upgrade and optimise it. Work includes replacing the air cooler with an AIO, installing additional storage, and regularly optimising the system as my requirements change.
 
@@ -23,6 +26,8 @@ I built this desktop and continue to upgrade and optimise it. Work includes repl
 | --- | --- |
 | Processor | Intel Core i5 |
 | Graphics | NVIDIA GeForce RTX 3050 |
+| Memory | 16 GB DDR4 |
+| Storage | 500 GB |
 | Work | Component transfer, reassembly and system optimisation |
 
 I transferred the existing RTX 3050 and Intel Core i5 system into my friend's case, reassembled the computer and optimised it.
